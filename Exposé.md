@@ -60,6 +60,8 @@ Der Beitrag meines Ansatzes lässt sich auf verschiedene Weise evaluieren:
 ## Kontakt und Danke
 Vielen Dank, dass Sie sich die Zeit genommen haben, mein Exposé durchzulesen.
 
+Dieses Exposé ist nicht vollständig und dient nur als Einblick.
+
 Ich bin jederzeit offen für Anpassungen an dem Thema damit dieses sich nahtlos in ihren Fachbereich einfügt und bei Fragen können Sie diese gerne an meine TU-Mail stellen unter oesterreich@campus.tu-berlin.de.
 
 Mit freundlichen Grüßen,
