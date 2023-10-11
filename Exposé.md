@@ -1,7 +1,7 @@
 # Exposé
 ---------------
 
-## Einleitung
+## Vorstellung
 Mein Name ist Chris Oesterreich und ich bin Student der Wirtschaftsinformatik an der Technischen Universität Berlin. Ich arbeite derzeit im Bereich Cloud Transformation(https://www.hisolutions.com/cloud) bei dem Unternehmen HISolutions und besitze das AWS Cloud Practitioner Zeritifikat und lerne gerade für das Cloud Digital Leader Zertifikat in der Google Cloud. Besonders interessiert bin ich in den Bereichen Cloud Architektur, Orchestrierung von Microservices und Serverless-Computing in multiplen Cloud Umgebungen.
 
 ## Fragestellung
@@ -43,7 +43,9 @@ Meine Bachelorarbeit umfasst die Forschung des Managementaufwandes, sowie die Ko
 Die Neuartigkeit meines Ansatzes besteht in dem Vergleich der Integrationsebenen in Bezug auf dessen Managementaufwandes und deren Ressourcenkosten, sowie des effizienten Managements einer Beispielanwendung in einer Multi-Cloud-Infrastruktur und der Orchestrierung von Microservices innerhalb dieser Anwendung über verschiedene Clouds.
 
 ## Methodiken
-Eine Beispielmethodik den Managementaufwand zu Vergleichen ist die Anzahl der zu erstellenden und zu verwaltenden Einheiten(Nodes) zur Erstellung einer solchen Pipeline zu vergleichen. 
+
+
+Eine konkrete Methodik den Managementaufwand zu Vergleichen ist die Anzahl der zu erstellenden und zu verwaltenden Einheiten(Nodes) zur Erstellung einer solchen Pipeline zu vergleichen. 
 
 ## Evaluierung meiner Arbeit
 Der Beitrag meines Ansatzes lässt sich auf verschiedene Weise evaluieren:
@@ -55,6 +57,7 @@ Der Beitrag meines Ansatzes lässt sich auf verschiedene Weise evaluieren:
 <li>repräsentative Anwendung des Praxisbeispieles zur Validierung der analytischen Ansätze.</li>
 </ol>
 
+## Kontakt und Danke
 Vielen Dank, dass Sie sich die Zeit genommen haben, mein Exposé durchzulesen.
 
 Ich bin jederzeit offen für Anpassungen an dem Thema damit dieses sich nahtlos in ihren Fachbereich einfügt und bei Fragen können Sie diese gerne an meine TU-Mail stellen unter oesterreich@campus.tu-berlin.de.
