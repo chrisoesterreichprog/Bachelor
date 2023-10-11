@@ -1,15 +1,15 @@
 # Exposé
 ---------------
 
-##Einleitung
+## Einleitung
 Mein Name ist Chris Oesterreich und ich bin Student der Wirtschaftsinformatik an der Technischen Universität Berlin. Ich arbeite derzeit im Bereich Cloud Transformation(https://www.hisolutions.com/cloud) bei dem Unternehmen HISolutions und besitze das AWS Cloud Practitioner Zeritifikat und lerne gerade für das Cloud Digital Leader Zertifikat in der Google Cloud. Besonders interessiert bin ich in den Bereichen Cloud Architektur, Orchestrierung von Microservices und Serverless-Computing in multiplen Cloud Umgebungen.
 
-##Fragestellung
+## Fragestellung
 Nun habe ich vor meine Bachelorarbeit über die Fragestellung: 	
 "Inwiefern verändern sich Managementaufwand und Kosten von Multi-Cloud Lösungen auf Ebene der unterschiedlichen Integrationslevel(Virtualisierungslevel) der Services der Cloud-Provider auf Basis analytischer Ansätze und anhand einer empirischen Verifikation?"
 zu schreiben.
 
-##Kurzer Überblick über den Stand der Technik
+## Kurzer Überblick über den Stand der Technik
 Der Stand der Technik auf dem Gebiet des Managements von Multi-Cloud Lösungen wird durch die Doktorarbeit von Mathias Mormal mit dem Titel "Konzept zur Verbesserung des Monitorings in industriellen Cloud-Umgebungen" geprägt, in dem neue Methodiken zur Verwaltung und zum Monitoring von Multi-Cloud Umgebungen aufgezeigt werden mit den Zielen:
 <ol>
 <li>Gefahr von Lock-ins bei agentenbasierten Monitoring-Systemen verringern</li>
@@ -36,16 +36,16 @@ Applications" mit Fokus auf:
 </ol>
 Derzeit entwickelt sich die Cloud-Forschung von reiner Infrastrukturabbildung in der Cloud hin zu Serverless und containerbasierten Anwendungen und deren Orchestrierung. 
 
-##Inhalte meiner Bachelorarbeit
+## Inhalte meiner Bachelorarbeit
 Meine Bachelorarbeit umfasst die Forschung des Managementaufwandes, sowie die Kostenanalyse von Multi-Cloud Lösungen auf Ebene der unterschiedlichen Integrationslevel von Services der Cloud-Provider in der Cloud. Ich vergleiche dabei die reine Abbildung von On-Premise Ressourcen auf Cloud Ressourcen als erste Integrationsebene, mit Auto-Skalierten und Cloud-Based Virtualisierten Ressoucen als zweite Integrationsebene, mit Serverless Architekturen als höchste Integrationsebene in Multi-Clouds analytisch, sowie mit einem Praxisbeispiel: Bauen und Verwenden einer Pipeline in den verschiedenen Integrationsebenen. Besonderen Fokus lege ich dabei auf das Management der höchsten Integrationsebene und die Orchestrierung von Microservices in Serverless Umgebungen in multiplen Clouds.
 
-##Neuartigkeit
+## Neuartigkeit
 Die Neuartigkeit meines Ansatzes besteht in dem Vergleich der Integrationsebenen in Bezug auf dessen Managementaufwandes und deren Ressourcenkosten, sowie des effizienten Managements einer Beispielanwendung in einer Multi-Cloud-Infrastruktur und der Orchestrierung von Microservices innerhalb dieser Anwendung über verschiedene Clouds.
 
-##Methodiken
+## Methodiken
 Eine Beispielmethodik den Managementaufwand zu Vergleichen ist die Anzahl der zu erstellenden und zu verwaltenden Einheiten(Nodes) zur Erstellung einer solchen Pipeline zu vergleichen. 
 
-##Evaluierung meiner Arbeit
+## Evaluierung meiner Arbeit
 Der Beitrag meines Ansatzes lässt sich auf verschiedene Weise evaluieren:
 <ol>
 <li>korrekte Aufstellung aller anfallenden Ressourcenkosten und übersichtliche Darstellung</li>
