@@ -1,0 +1,106 @@
+This exposé will build upon existing theories and models in cloud computing, management, and cost analysis, 
+aligning them with my academic foundation in Wirtschaftsinformatik. 
+Theoretical insights will inform the analytical approaches and frameworks developed to assess the impact of integration levels on multi-cloud management.
+
+\subsection{What is MultiCloud}
+
+Multi-cloud is a cloud computing strategy that involves using services and resources from multiple cloud providers. 
+In a multi-cloud approach, organizations utilize more than one cloud platform, such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), 
+or other cloud providers, to meet their specific business needs and goals. 
+This can involve using a combination of public and private clouds or even multiple public clouds.\\
+The key reasons for adopting a multi-cloud strategy include:
+
+\subsubsection{Avoiding vendor lock-in}
+By using multiple cloud providers, organizations can reduce their dependency on a single vendor, 
+which can help them avoid potential issues related to vendor lock-in, such as cost increases or limited flexibility.
+
+\subsubsection{Diverse service offerings} 
+Different cloud providers offer a wide range of services and features. 
+Using multiple providers allows organizations to select the best tools and services for their specific requirements.
+
+\subsubsection{Geographic redundancy} 
+Multi-cloud can provide geographic redundancy by spreading workloads across different cloud regions or data centers, 
+enhancing availability and disaster recovery capabilities.
+
+\subsubsection{Compliance and data sovereignty}
+Some industries and organizations have specific compliance requirements that mandate the storage and processing of 
+data in particular geographic regions. Multi-cloud can help meet these requirements by using data centers in different locations.
+
+\subsubsection{Cost optimization}
+Organizations can take advantage of competitive pricing and 
+discounts from different providers to optimize their cloud spending.\\
+\\
+
+However, managing a multi-cloud environment can be complex, as it involves dealing with different cloud management
+interfaces, security policies, and monitoring tools from each provider. Proper planning, governance, and management tools are 
+essential to make the most of a multi-cloud strategy while minimizing operational challenges.
+
+Overall, multi-cloud is a flexible approach that allows organizations to tailor their cloud infrastructure to meet 
+their specific needs and leverage the strengths of various cloud providers.
+
+\subsection{What are Multi Cloud Architectures}
+
+%%% TODO Picure of Multi-Cloud Architectures
+
+Multi-cloud solutions come in various forms, each with its own characteristics and advantages. 
+Here's a brief description of the differences between arbitrary, segmented, choice, parallel, and portable multi-cloud solutions:
+
+\subsubsection{Arbitrary Multi-Cloud}
+In arbitrary multi-cloud, an organization uses multiple cloud providers without a specific strategy or plan.
+The choice of cloud providers may be ad hoc, based on individual project requirements or team preferences.
+This approach can lead to inefficiencies and increased management complexity, as there is no standardized process for managing different cloud services.
+
+\subsubsection{Segmented Multi-Cloud}
+Segmented multi-cloud involves separating workloads or applications across different cloud providers based on specific criteria, such as security, compliance, or performance requirements.
+It's a more strategic approach compared to arbitrary multi-cloud, as workloads are intentionally placed on specific cloud platforms to achieve specific goals.
+
+\subsubsection{Choice Multi-Cloud}
+In a choice multi-cloud approach, organizations select cloud providers based on the unique strengths and capabilities of each provider for particular workloads or services.
+The selection is made with careful consideration of which provider is the best fit for a given task, taking advantage of the strengths and cost-effectiveness of each cloud.
+
+\subsubsection{Parallel Multi-Cloud}
+Parallel multi-cloud involves running identical workloads or applications simultaneously on multiple cloud providers.
+This approach is often used for redundancy and high availability, where if one cloud provider experiences an outage, the workload can seamlessly switch to another provider.
+
+\subsubsection{Portable Multi-Cloud}
+Portable multi-cloud focuses on creating applications or workloads that can be easily moved between different cloud providers.
+This typically involves using containerization technologies like Docker and container orchestration platforms like Kubernetes to ensure that applications are agnostic to the underlying cloud infrastructure.
+In summary, these different multi-cloud approaches vary in terms of strategy and implementation. Arbitrary multi-cloud lacks a clear strategy, segmented multi-cloud focuses on specific criteria, choice multi-cloud optimizes for each workload's requirements, parallel multi-cloud emphasizes redundancy, and portable multi-cloud prioritizes application portability across cloud providers. The choice of which approach to adopt depends on an organization's goals, workload requirements, and the level of complexity they are willing to manage.
+
+
+\subsection{Integration levels of cloud services}
+
+Cloud providers typically offer various integration levels, or virtualization levels, for their cloud services. 
+These levels are categorized based on the degree of control and management that customers have over the underlying infrastructure. 
+
+The main integration levels offered by cloud providers are:
+
+\subsubsection{Infrastructure as a Service (IaaS)}
+In IaaS, the cloud provider offers virtualized computing resources, including virtual machines (VMs), storage, and networking.
+Customers have more control over the operating system, applications, and data, managing and maintaining the software stack on top of the provided infrastructure.
+IaaS is well-suited for organizations that need flexibility in configuring and managing their infrastructure while offloading the hardware management to the cloud provider.
+
+\subsubsection{Platform as a Service (PaaS)}
+PaaS provides a higher level of abstraction, focusing on application development and deployment.
+Customers can build, run, and manage applications without concerning themselves with the underlying infrastructure or operating system.
+PaaS offerings often include development tools, databases, and runtime environments.
+This level of service is beneficial for developers looking to accelerate the application development process and focus on code rather than infrastructure management.
+
+\subsubsection{Container as a Service (CaaS)}
+CaaS is a subset of PaaS that centers on containerization technologies like Docker and Kubernetes.
+Customers can package applications into containers, which are portable and can be deployed consistently across various environments.
+CaaS platforms simplify container orchestration, scaling, and management, providing the necessary infrastructure for containerized applications.
+
+\subsubsection{Function as a Service (FaaS)}
+FaaS, also known as serverless computing, abstracts infrastructure to the point where customers only need to provide code in the form of functions.
+Customers write and upload code, and the cloud provider takes care of executing and scaling these functions automatically in response to events.
+FaaS is highly event-driven and is ideal for applications with sporadic or unpredictable workloads.
+
+\subsubsection{Software as a Service (SaaS)}
+SaaS is the highest level of abstraction, offering complete software applications over the internet.
+Customers do not manage infrastructure, software, or updates. They only use the software provided by the cloud vendor.
+Common examples of SaaS include email services like Gmail, office suites like Microsoft 365, and customer relationship management (CRM) tools like Salesforce.
+\\\\
+These integration levels represent a spectrum of control and responsibility, 
+with IaaS providing the most control and responsibility and SaaS offering the least. Organizations choose the integration level that aligns with their specific needs, from full control over infrastructure to minimal management, depending on their use cases and objectives.
+
