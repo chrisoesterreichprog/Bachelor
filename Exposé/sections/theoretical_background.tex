@@ -99,30 +99,58 @@ their specific needs and leverage the strengths of various cloud providers.
 
 %%% TODO Picure of Multi-Cloud Architectures
 
-Multi-cloud solutions come in various forms, each with its own characteristics and advantages. 
-Here's a brief description of the differences between arbitrary, segmented, choice, parallel, and portable multi-cloud solutions:
+Multi-cloud architectures encompass various approaches to leveraging multiple cloud providers to achieve specific business goals. 
+Two common examples of multi-cloud architectures are "redundant" and "composite" architectures:
 
-\subsubsection{Arbitrary Multi-Cloud}
-In arbitrary multi-cloud, an organization uses multiple cloud providers without a specific strategy or plan.
-The choice of cloud providers may be ad hoc, based on individual project requirements or team preferences.
-This approach can lead to inefficiencies and increased management complexity, as there is no standardized process for managing different cloud services.
+\subsubsection{Redundant Multi-Cloud Architecture}
 
-\subsubsection{Segmented Multi-Cloud}
-Segmented multi-cloud involves separating workloads or applications across different cloud providers based on specific criteria, such as security, compliance, or performance requirements.
-It's a more strategic approach compared to arbitrary multi-cloud, as workloads are intentionally placed on specific cloud platforms to achieve specific goals.
+In a redundant multi-cloud architecture, the primary objective is to enhance redundancy and high availability by using multiple cloud providers. 
+This approach helps ensure that services and applications remain operational even if one cloud provider experiences downtime or issues. 
+Key characteristics include:
 
-\subsubsection{Choice Multi-Cloud}
-In a choice multi-cloud approach, organizations select cloud providers based on the unique strengths and capabilities of each provider for particular workloads or services.
-The selection is made with careful consideration of which provider is the best fit for a given task, taking advantage of the strengths and cost-effectiveness of each cloud.
+\paragraph{Failover and Disaster Recovery}
+Redundant multi-cloud architectures are designed to automatically failover to an alternate cloud provider in the event of an outage. 
+This ensures minimal service disruption.
 
-\subsubsection{Parallel Multi-Cloud}
-Parallel multi-cloud involves running identical workloads or applications simultaneously on multiple cloud providers.
-This approach is often used for redundancy and high availability, where if one cloud provider experiences an outage, the workload can seamlessly switch to another provider.
+\paragraph{Data Replication}
 
-\subsubsection{Portable Multi-Cloud}
-Portable multi-cloud focuses on creating applications or workloads that can be easily moved between different cloud providers.
-This typically involves using containerization technologies like Docker and container orchestration platforms like Kubernetes to ensure that applications are agnostic to the underlying cloud infrastructure.
-In summary, these different multi-cloud approaches vary in terms of strategy and implementation. Arbitrary multi-cloud lacks a clear strategy, segmented multi-cloud focuses on specific criteria, choice multi-cloud optimizes for each workload's requirements, parallel multi-cloud emphasizes redundancy, and portable multi-cloud prioritizes application portability across cloud providers. The choice of which approach to adopt depends on an organization's goals, workload requirements, and the level of complexity they are willing to manage.
+Data is replicated across multiple cloud providers' data centers to prevent data loss and ensure data availability.
+
+\paragraph{Load Balancing}
+Load balancers distribute traffic across multiple cloud environments, optimizing performance and reducing the risk of overloads on a single provider.
+
+
+\paragraph{Geographic Distribution}
+Cloud resources are provisioned in different geographic regions or data centers to further enhance redundancy.
+\\
+\\
+Example: A company may host its critical web application on AWS and replicate it on Azure. 
+If AWS experiences an outage, traffic is automatically routed to the Azure instance to maintain service availability.
+
+\subsubsection{Composite Multi-Cloud Architecture}
+
+A composite multi-cloud architecture involves integrating and orchestrating services from multiple cloud providers to create a unified and optimized solution. 
+This approach allows organizations to take advantage of the strengths and features offered by different providers. 
+Key characteristics include:
+
+\paragraph{Service Composition}
+Different cloud services from various providers are combined to form a cohesive, composite solution. 
+For example, storage may come from one provider, while analytics and machine learning services come from another.
+
+\paragraph{Service Aggregation}
+A layer of abstraction or middleware may be used to aggregate services 
+from multiple providers into a single interface for users and applications.
+
+\paragraph{Performance and Cost Optimization} 
+Composite architectures aim to optimize performance and 
+reduce costs by selecting the best-suited services from each provider for specific tasks.
+
+\paragraph{Flexibility and Vendor Neutrality}
+Organizations have the flexibility to choose the most appropriate cloud services for their needs, reducing vendor lock-in.
+\\\\
+Example: An e-commerce company may use Google Cloud's BigQuery for data analytics, AWS's S3 for storage, and Microsoft Azure's AI services for personalized recommendations, all integrated into a single platform to create a comprehensive shopping experience for users.
+\\\\
+Both redundant and composite multi-cloud architectures offer unique advantages and are chosen based on specific business requirements, such as high availability, cost optimization, flexibility, and the desire to leverage the strengths of different cloud providers. The choice between these architectures depends on an organization's goals and the level of complexity it is willing to manage.
 
 
 \subsection{Integration levels of cloud services}
