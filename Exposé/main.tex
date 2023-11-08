@@ -11,8 +11,12 @@
 \usepackage{csquotes}
 
 % documentation: https://ctan.kako-dev.de/macros/latex/contrib/biblatex/doc/biblatex.pdf
-\usepackage[style=authoryear,sorting=nyt]{biblatex}
-\addbibresource{references.bib}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource{Multi-Cloud.bib}
 
 % um Grafiken einzubinden, {Angabe des Pfades der Bilder}
 \usepackage{graphicx}
@@ -30,7 +34,7 @@
   colorlinks   = true,    % Colours links instead of ugly boxes
   urlcolor     = blue,    % Colour for external hyperlinks
   linkcolor    = black,    % Colour of internal links
-  citecolor    = red      % Colour of citations
+  citecolor    = black      % Colour of citations
 }
 
 % Infos über Dokument

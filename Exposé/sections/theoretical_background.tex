@@ -2,13 +2,70 @@ This exposé will build upon existing theories and models in cloud computing, ma
 aligning them with my academic foundation in Wirtschaftsinformatik. 
 Theoretical insights will inform the analytical approaches and frameworks developed to assess the impact of integration levels on multi-cloud management.
 
+\subsection{What is Cloud Computing}
+NIST \cite{NISTCloudComputing} describes cloud computing as 
+“a model for enabling convenient, on-demand network access to a shared pool of configurable computing resources 
+(e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned 
+and released with minimal management effort or service provider interaction”.
+Cloud computing is a technology and service delivery model that allows individuals and organizations to access and use a wide range of computing resources over the internet. 
+Instead of owning and managing physical servers, storage devices, and networking equipment, 
+cloud computing users can leverage the resources of cloud service providers, paying only for what they consume. 
+
+\subsubsection{Characteristics of Cloud Computing}
+Cloud computing is characterized by its key attributes \cite{oliveCloudComputingCharacteristics} \cite{gongCharacteristicsCloudComputing2010}:
+
+\paragraph{On-Demand Self-Service}
+Users can provision and manage computing resources as needed, without requiring human intervention from the service provider.
+
+\paragraph{Broad Network Access}
+Cloud services are accessible over the internet from a variety of devices, including smartphones, laptops, and tablets.
+
+\paragraph{Resource Pooling}
+Cloud providers pool computing resources and serve multiple customers. 
+Resources are dynamically allocated and reassigned as needed.
+
+\paragraph{Rapid Elasticity}
+
+Cloud resources can be quickly scaled up or down to accommodate changing workloads, 
+ensuring optimal performance and cost efficiency.
+
+\paragraph{Measured Service} 
+Cloud usage is metered, and users are billed for the resources they consume. 
+This pay-as-you-go model is often cost-effective compared to traditional IT infrastructure.
+
+
+\subsubsection{Deployment Models}
+Cloud computing can also be categorized based on deployment models \cite{patelCloudComputingDeployment2021}:
+
+\paragraph{Public Cloud}
+In a public cloud, cloud resources are owned and operated by a third-party cloud service provider and 
+are made available to the general public. 
+Customers share resources and infrastructure.
+
+\paragraph{Private Cloud}
+Private clouds are used exclusively by a single organization. 
+They may be hosted on-premises or by a third-party provider, offering more control, security, 
+and privacy for the organization's data and applications.
+
+\paragraph{Hybrid Cloud}
+A hybrid cloud combines both public and private cloud services. 
+It allows data and applications to be shared between them, 
+offering flexibility and data portability while addressing specific security and compliance needs.
+\\
+\\
+Cloud computing has revolutionized the way businesses and individuals use technology by providing scalable, 
+cost-effective, and accessible computing resources. 
+It has become a fundamental part of modern IT infrastructure, enabling agility, innovation, 
+and cost-efficiency for a wide range of applications and services.
+
 \subsection{What is MultiCloud}
 
 Multi-cloud is a cloud computing strategy that involves using services and resources from multiple cloud providers. 
 In a multi-cloud approach, organizations utilize more than one cloud platform, such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), 
 or other cloud providers, to meet their specific business needs and goals. 
 This can involve using a combination of public and private clouds or even multiple public clouds.\\
-The key reasons for adopting a multi-cloud strategy include:
+
+The key reasons for adopting a multi-cloud strategy include \cite{hongOverviewMulticloudComputing2019}:
 
 \subsubsection{Avoiding vendor lock-in}
 By using multiple cloud providers, organizations can reduce their dependency on a single vendor, 
