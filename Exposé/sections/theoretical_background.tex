@@ -1,18 +1,18 @@
-This exposé will build upon existing theories and models in cloud computing, management, and cost analysis, 
-aligning them with my academic foundation in Wirtschaftsinformatik. 
-Theoretical insights will inform the analytical approaches and frameworks developed to assess the impact of integration levels on multi-cloud management.
+This chapter provides an exploration of the theoretical underpinnings of 
+both cloud computing and the emerging domain of multi-cloud environments.
 
 \subsection{What is Cloud Computing}
 NIST \cite{NISTCloudComputing} describes cloud computing as 
 “a model for enabling convenient, on-demand network access to a shared pool of configurable computing resources 
 (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned 
 and released with minimal management effort or service provider interaction”.
-Cloud computing is a technology and service delivery model that allows individuals and organizations to access and use a wide range of computing resources over the internet. 
+Cloud computing is a technology and service delivery model that allows individuals and 
+organizations to access and use a wide range of computing resources over the internet. 
 Instead of owning and managing physical servers, storage devices, and networking equipment, 
 cloud computing users can leverage the resources of cloud service providers, paying only for what they consume. 
 
 \subsubsection{Characteristics of Cloud Computing}
-Cloud computing is characterized by its key attributes \cite{oliveCloudComputingCharacteristics} \cite{gongCharacteristicsCloudComputing2010}:
+Cloud computing is characterized by it key attributes \cite{mellNISTDefinitionCloud} \cite{oliveCloudComputingCharacteristics} \cite{gongCharacteristicsCloudComputing2010}:
 
 \paragraph{On-Demand Self-Service}
 Users can provision and manage computing resources as needed, without requiring human intervention from the service provider.
@@ -35,7 +35,7 @@ This pay-as-you-go model is often cost-effective compared to traditional IT infr
 
 
 \subsubsection{Deployment Models}
-Cloud computing can also be categorized based on deployment models \cite{patelCloudComputingDeployment2021}:
+Cloud computing can also be categorized based on deployment models \cite{mellNISTDefinitionCloud} \cite{patelCloudComputingDeployment2021}:
 
 \paragraph{Public Cloud}
 In a public cloud, cloud resources are owned and operated by a third-party cloud service provider and 
@@ -51,25 +51,75 @@ and privacy for the organization's data and applications.
 A hybrid cloud combines both public and private cloud services. 
 It allows data and applications to be shared between them, 
 offering flexibility and data portability while addressing specific security and compliance needs.
+
+\paragraph{Community Cloud}
+The cloud infrastructure is allocated for the exclusive utilization of a 
+particular community comprising consumers from organizations with common interests, 
+such as mission objectives, security prerequisites, policies, and compliance considerations. 
+Ownership, management, and operation of this infrastructure may 
+rest with one or more organizations within the community, 
+a third-party entity, or a collaborative arrangement among them. 
+Additionally, the infrastructure may be situated either on-premises or off-premises.
 \\
 \\
-Cloud computing has revolutionized the way businesses and individuals use technology by providing scalable, 
-cost-effective, and accessible computing resources. 
+Cloud computing has revolutionized the way businesses and individuals use 
+technology by providing scalable, cost-effective, and accessible computing resources. 
 It has become a fundamental part of modern IT infrastructure, enabling agility, innovation, 
 and cost-efficiency for a wide range of applications and services.
+
+\subsection{Integration levels of cloud services}
+
+Cloud providers typically offer various integration levels, or virtualization levels, for their cloud services. 
+These levels are categorized based on the degree of control and management that customers have over the underlying infrastructure. 
+
+The main integration levels offered by cloud providers are \cite{mellNISTDefinitionCloud} \cite{hongOverviewMulticloudComputing2019} \cite{patelCloudComputingDeployment2021} \:
+
+\subsubsection{Infrastructure as a Service (IaaS)}
+In IaaS, the cloud provider offers virtualized computing resources, including virtual machines (VMs), storage, and networking.
+Customers have more control over the operating system, applications, and data, managing and maintaining the software stack on top of the provided infrastructure.
+IaaS is well-suited for organizations that need flexibility in configuring and managing their infrastructure while offloading the hardware management to the cloud provider.
+
+\subsubsection{Platform as a Service (PaaS)}
+PaaS provides a higher level of abstraction, focusing on application development and deployment.
+Customers can build, run, and manage applications without concerning themselves with the underlying infrastructure or operating system.
+PaaS offerings often include development tools, databases, and runtime environments.
+This level of service is beneficial for developers looking to accelerate 
+the application development process and focus on code rather than infrastructure management.
+
+\subsubsection{Container as a Service (CaaS)}
+CaaS is a subset of PaaS that centers on containerization technologies like Docker and Kubernetes.
+Customers can package applications into containers, which are portable and can be deployed consistently across various environments.
+CaaS platforms simplify container orchestration, scaling, and management, providing the necessary infrastructure for containerized applications.
+
+\subsubsection{Function as a Service (FaaS)}
+FaaS, also known as serverless computing, abstracts infrastructure to the point where customers only need to provide code in the form of functions.
+Customers write and upload code, and the cloud provider takes care of executing and scaling these functions automatically in response to events.
+FaaS is highly event-driven and is ideal for applications with sporadic or unpredictable workloads.
+
+\subsubsection{Software as a Service (SaaS)}
+SaaS is the highest level of abstraction, offering complete software applications over the internet.
+Customers do not manage infrastructure, software, or updates. 
+They only use the software provided by the cloud vendor.
+Common examples of SaaS include email services like Gmail, office suites like Microsoft 365, 
+and customer relationship management (CRM) tools like Salesforce.
+\\\\
+These integration levels represent a spectrum of control and responsibility, 
+with IaaS providing the most control and responsibility and SaaS offering the least. 
+Organizations choose the integration level that aligns with their specific needs, 
+from full control over infrastructure to minimal management, depending on their use cases and objectives.
 
 \subsection{What is MultiCloud}
 
 Multi-cloud is a cloud computing strategy that involves using services and resources from multiple cloud providers. 
 In a multi-cloud approach, organizations utilize more than one cloud platform, such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), 
 or other cloud providers, to meet their specific business needs and goals. 
-This can involve using a combination of public and private clouds or even multiple public clouds.\\
+This can involve using a combination of public and private clouds or even multiple public clouds \cite{WasIstMulticloud}.\\
 
-The key reasons for adopting a multi-cloud strategy include \cite{hongOverviewMulticloudComputing2019}:
+The key reasons for adopting a multi-cloud strategy include  \cite{hongOverviewMulticloudComputing2019} \cite{BenefitsLimitationsMulticloud}:
 
 \subsubsection{Avoiding vendor lock-in}
 By using multiple cloud providers, organizations can reduce their dependency on a single vendor, 
-which can help them avoid potential issues related to vendor lock-in, such as cost increases or limited flexibility.
+which can help them avoid potential issues related to vendor lock-in, such as cost increases or limited flexibility \cite{pellegriniPreventingVendorLockins2017}.
 
 \subsubsection{Diverse service offerings} 
 Different cloud providers offer a wide range of services and features. 
@@ -77,7 +127,7 @@ Using multiple providers allows organizations to select the best tools and servi
 
 \subsubsection{Geographic redundancy} 
 Multi-cloud can provide geographic redundancy by spreading workloads across different cloud regions or data centers, 
-enhancing availability and disaster recovery capabilities.
+enhancing availability and disaster recovery capabilities \cite{alzainCloudComputingSecurity2012}.
 
 \subsubsection{Compliance and data sovereignty}
 Some industries and organizations have specific compliance requirements that mandate the storage and processing of 
@@ -100,7 +150,7 @@ their specific needs and leverage the strengths of various cloud providers.
 %%% TODO Picure of Multi-Cloud Architectures
 
 Multi-cloud architectures encompass various approaches to leveraging multiple cloud providers to achieve specific business goals. 
-Two common examples of multi-cloud architectures are "redundant" and "composite" architectures:
+The General Services Administration\cite{MultiCloudHybridCloud} divide multi-cloud architectures in "redundant" and "composite" architectures :
 
 \subsubsection{Redundant Multi-Cloud Architecture}
 
@@ -146,46 +196,14 @@ Composite architectures aim to optimize performance and
 reduce costs by selecting the best-suited services from each provider for specific tasks.
 
 \paragraph{Flexibility and Vendor Neutrality}
-Organizations have the flexibility to choose the most appropriate cloud services for their needs, reducing vendor lock-in.
+Organizations have the flexibility to choose the most appropriate cloud services for their needs,
+reducing vendor lock-in.
 \\\\
 Example: An e-commerce company may use Google Cloud's BigQuery for data analytics, AWS's S3 for storage, and Microsoft Azure's AI services for personalized recommendations, all integrated into a single platform to create a comprehensive shopping experience for users.
 \\\\
-Both redundant and composite multi-cloud architectures offer unique advantages and are chosen based on specific business requirements, such as high availability, cost optimization, flexibility, and the desire to leverage the strengths of different cloud providers. The choice between these architectures depends on an organization's goals and the level of complexity it is willing to manage.
-
-
-\subsection{Integration levels of cloud services}
-
-Cloud providers typically offer various integration levels, or virtualization levels, for their cloud services. 
-These levels are categorized based on the degree of control and management that customers have over the underlying infrastructure. 
-
-The main integration levels offered by cloud providers are:
-
-\subsubsection{Infrastructure as a Service (IaaS)}
-In IaaS, the cloud provider offers virtualized computing resources, including virtual machines (VMs), storage, and networking.
-Customers have more control over the operating system, applications, and data, managing and maintaining the software stack on top of the provided infrastructure.
-IaaS is well-suited for organizations that need flexibility in configuring and managing their infrastructure while offloading the hardware management to the cloud provider.
-
-\subsubsection{Platform as a Service (PaaS)}
-PaaS provides a higher level of abstraction, focusing on application development and deployment.
-Customers can build, run, and manage applications without concerning themselves with the underlying infrastructure or operating system.
-PaaS offerings often include development tools, databases, and runtime environments.
-This level of service is beneficial for developers looking to accelerate the application development process and focus on code rather than infrastructure management.
-
-\subsubsection{Container as a Service (CaaS)}
-CaaS is a subset of PaaS that centers on containerization technologies like Docker and Kubernetes.
-Customers can package applications into containers, which are portable and can be deployed consistently across various environments.
-CaaS platforms simplify container orchestration, scaling, and management, providing the necessary infrastructure for containerized applications.
-
-\subsubsection{Function as a Service (FaaS)}
-FaaS, also known as serverless computing, abstracts infrastructure to the point where customers only need to provide code in the form of functions.
-Customers write and upload code, and the cloud provider takes care of executing and scaling these functions automatically in response to events.
-FaaS is highly event-driven and is ideal for applications with sporadic or unpredictable workloads.
-
-\subsubsection{Software as a Service (SaaS)}
-SaaS is the highest level of abstraction, offering complete software applications over the internet.
-Customers do not manage infrastructure, software, or updates. They only use the software provided by the cloud vendor.
-Common examples of SaaS include email services like Gmail, office suites like Microsoft 365, and customer relationship management (CRM) tools like Salesforce.
-\\\\
-These integration levels represent a spectrum of control and responsibility, 
-with IaaS providing the most control and responsibility and SaaS offering the least. Organizations choose the integration level that aligns with their specific needs, from full control over infrastructure to minimal management, depending on their use cases and objectives.
-
+Both redundant and composite multi-cloud architectures offer unique advantages 
+and are chosen based on specific business requirements, 
+such as high availability, cost optimization, flexibility, 
+and the desire to leverage the strengths of different cloud providers. 
+The choice between these architectures depends on an organization's goals and the 
+level of complexity it is willing to manage.
